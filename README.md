@@ -2,6 +2,8 @@
 
 A powerful and user-friendly tool to translate video subtitles from English to Persian (Farsi) using Whisper AI and advanced models like Ollama or Gemini.
 
+![logo](subfarsi.png)
+
 ## Features
 - 🎥 Extract audio from any video format (MP4, AVI, MKV, etc.)
 - 🎤 Generate accurate English subtitles with Whisper AI
@@ -20,3 +22,8 @@ A powerful and user-friendly tool to translate video subtitles from English to P
    ```bash
    git clone https://github.com/YourUsername/Persian-Subtitle-Translator.git
    cd Persian-Subtitle-Translator
+
+ ## Install dependencies:
+pip install -r requirements.txt
+## Usage
+Run the script: python3 subfarsipro_v3.py

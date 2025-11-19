@@ -1,29 +1,46 @@
-# Persian Subtitle Translator - Professional Edition
+# SubFarsiPro - Persian Video Subtitle Translator
 
-A powerful and user-friendly tool to translate video subtitles from English to Persian (Farsi) using Whisper AI and advanced models like Ollama or Gemini.
+A professional tool to translate video subtitles from English to Persian (Farsi) using Whisper AI and advanced models like Ollama or Gemini.
 
-![logo](subfarsi.png)
+## 🚀 Quick Start
 
-## Features
-- 🎥 Extract audio from any video format (MP4, AVI, MKV, etc.)
-- 🎤 Generate accurate English subtitles with Whisper AI
-- 🌍 Translate to natural Persian with Ollama (local) or Gemini API
-- 📄 Export professional SRT subtitle files
-- 🔧 Automatic timing adjustment and robust error handling
-- 📊 Detailed progress tracking
+See the [subfarsipro/](subfarsipro/) directory for the main application.
 
-## Requirements
-- FFmpeg installed (`sudo apt install ffmpeg`)
-- Python 3.7+ with required packages (`pip install git+https://github.com/openai/whisper.git google-generativeai requests`)
-- Ollama running locally (recommended) or a Gemini API key
+```bash
+cd subfarsipro
+python3 subfarsipro_v3.py
+```
 
-## Installation
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/YourUsername/Persian-Subtitle-Translator.git
-   cd Persian-Subtitle-Translator
+For detailed documentation, installation instructions, and usage guide, see [subfarsipro/README.md](subfarsipro/README.md).
 
- ## Install dependencies:
-pip install -r requirements.txt
-## Usage
-Run the script: python3 subfarsipro_v3.py
+## 📁 Project Structure
+
+- `subfarsipro/` - Main application directory
+  - `subfarsipro_v3.py` - Main application script (Version 3.0 with advanced CUDA support)
+  - `README.md` - Complete documentation
+  - `CUDA_INSTALLATION_GUIDE.md` - CUDA setup guide
+  - `requirements.txt` - Python dependencies
+- `run_subfarsipro.sh` - Convenience script to run with virtualenv
+
+## ✨ Latest Features (Version 3.0)
+
+- 🎮 Advanced CUDA detection and GPU compatibility checks
+- 🛡️ Automatic fallback to CPU mode if GPU issues detected
+- 🔍 Version mismatch detection for CUDA/PyTorch compatibility
+- 📊 Smart GPU memory-based Whisper model selection
+
+## 📖 Documentation
+
+Full documentation is available in [subfarsipro/README.md](subfarsipro/README.md).
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## 📄 License
+
+This project is open source and available for use.
+
+---
+
+Made with ❤️ for the Persian-speaking community

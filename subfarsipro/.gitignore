@@ -1,4 +1,0 @@
-*.log
-*.wav
-__pycache__/
-.subtitle_cache.json

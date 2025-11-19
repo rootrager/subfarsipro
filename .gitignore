@@ -42,10 +42,10 @@ Thumbs.db
 *.srt
 *.persian.srt
 *.temp.*
+.subtitle_cache.json
 
 # Logs
 *.log
 
 # Test files (optional - uncomment if you want to ignore test files)
 # test_*.py
-

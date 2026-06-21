@@ -10,6 +10,7 @@ jobs:
     name: Build on ${{ matrix.os }}
     runs-on: ${{ matrix.os }}
     strategy:
+      fail-fast: false
       matrix:
         os: [ubuntu-latest, macos-latest, windows-latest]
 
@@ -26,8 +27,7 @@ jobs:
     - name: Install System Dependencies (Linux)
       if: runner.os == 'Linux'
       run: |
-        sudo apt-get update
-        sudo apt-get install -y libgl1-mesa-glx python3-tk
+        sudo apt-get update && sudo apt-get install -y libgl1-mesa-glx python3-tk
 
     - name: Install Python Dependencies
       run: |
